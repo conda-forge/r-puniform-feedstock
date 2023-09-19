@@ -1,4 +1,4 @@
-{% set version = "0.2.6" %}
+{% set version = "0.2.7" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/puniform_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/puniform/puniform_{{ version }}.tar.gz
-  sha256: 71d3952825e78c68d0aa713f8b26b54f611488ed8dc21cd482485845423bcde5
+  sha256: 9fe825a7e4785fbd9de9f21ddfbb2fd485e7e22c2edcf3653e681c7d19e50597
 
 build:
   merge_build_host: true  # [win]
