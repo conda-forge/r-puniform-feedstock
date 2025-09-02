@@ -1,4 +1,4 @@
-{% set version = "0.2.7" %}
+{% set version = "0.2.8" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/puniform_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/puniform/puniform_{{ version }}.tar.gz
-  sha256: 9fe825a7e4785fbd9de9f21ddfbb2fd485e7e22c2edcf3653e681c7d19e50597
+  sha256: fed1a0c126a51e3b5f7e49ffd62a8475d686cf787cee34a866967830343378a7
 
 build:
-  number: 1
+  number: 0
 
   rpaths:
     - lib/R/lib/
